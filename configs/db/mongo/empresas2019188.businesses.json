@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "65e5524f6ca3918f9b87210c"
+  },
+  "name": "Multifor",
+  "impactLevel": "bajo",
+  "operationTime": "10 años",
+  "category": "Muebles",
+  "size": "30 empleados",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e552686ca3918f9b87210f"
+  },
+  "name": "ComeMucho",
+  "impactLevel": "medio",
+  "operationTime": "si",
+  "category": "Comida",
+  "size": "200 personas",
+  "state": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e552876ca3918f9b872112"
+  },
+  "name": "Procasa",
+  "impactLevel": "medio",
+  "operationTime": "88 años",
+  "category": "venta de carne",
+  "size": "500 empleados",
+  "state": true,
+  "__v": 0
+}]
