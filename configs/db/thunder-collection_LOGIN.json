@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "LOGIN",
+    "dateExported": "2024-03-04T04:34:38.254Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "80d83974-86f6-49e3-bd53-8ce6f15de33b",
+            "colId": "8108804a-613a-4135-81f9-10e091b40fe4",
+            "containerId": "",
+            "name": "Registrar",
+            "url": "http://localhost:3000/businessAPI/v1/users/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T04:28:21.036Z",
+            "modified": "2024-03-04T04:34:15.742Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"Hector\",\n  \"email\": \"Hector@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "37455d51-2690-48aa-9b00-139427cdc7f7",
+            "colId": "8108804a-613a-4135-81f9-10e091b40fe4",
+            "containerId": "",
+            "name": "Loguearse",
+            "url": "http://localhost:3000/businessAPI/v1/users/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T04:28:21.037Z",
+            "modified": "2024-03-04T04:34:27.638Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"Hector@gmail.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

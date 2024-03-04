@@ -12,11 +12,11 @@ import {
   businessExistsById,
 } from '../helpers/db-validators.js';
 import { validateFields } from '../middlewares/validate-fields.js';
-import { validateJWT } from '../middlewares/validate-jwt.js';
+
 
 const router = new Router();
 
-router.get('/', [validateJWT, validateFields], businessGet); // Ruta para obtener negocios
+router.get('/', [validateFields], businessGet); // Ruta para obtener negocios
 
 router.post( // Ruta para registrar un nuevo negocio
   '/',
@@ -31,9 +31,9 @@ router.post( // Ruta para registrar un nuevo negocio
   businessPost
 );
 
-router.get('/:orderReference', [validateJWT, validateFields], businessOrder); // Ruta para obtener un negocio por referencia de orden
+router.get('/:orderReference', [ validateFields], businessOrder); // Ruta para obtener un negocio por referencia de orden
 
-router.get('/generateReport', [validateJWT, validateFields], businessExcel); // Ruta para generar un reporte de negocios
+router.get('/generateReport', [ validateFields], businessExcel); // Ruta para generar un reporte de negocios
 
 router.put( // Ruta para actualizar un negocio
   '/:id',

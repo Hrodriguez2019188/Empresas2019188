@@ -1,4 +1,3 @@
-import express from 'express';
 import bcryptjs from 'bcryptjs';
 import Business from './business.model.js';
 import exceljs from 'exceljs';
@@ -66,7 +65,7 @@ export const businessExcel = async (req, res) => {
     // Encabezado de nombre de archivo
     res.setHeader(
       'Content-Disposition',
-      'attachment; filename="reporteNegocios.xlsx"'
+      'attachment; filename="Reporte.xlsx"'
     );
 
     await excelWork.xlsx.write(res);

@@ -1,0 +1,100 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "EMPRESAS",
+    "dateExported": "2024-03-04T04:51:31.047Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "079b64cb-6ea0-406d-947b-4249ba9b70d2",
+            "colId": "64fcd21c-694c-4682-8cf8-a8457c9ea2e7",
+            "containerId": "",
+            "name": "IngresarEmpresas",
+            "url": "http://localhost:3000/businessAPI/v1/business/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T04:28:16.501Z",
+            "modified": "2024-03-04T04:48:08.001Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Procasa\",\n  \"impactLevel\": \"medio\",\n  \"operationTime\": \"88 años\",\n  \"category\": \"venta de carne\",\n  \"size\": \"500 empleados\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5ba3893-ac8a-44fd-ab19-bedf0084b2c9",
+            "colId": "64fcd21c-694c-4682-8cf8-a8457c9ea2e7",
+            "containerId": "",
+            "name": "ListaEmpresas",
+            "url": "http://localhost:3000/businessAPI/v1/business/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-04T04:28:16.502Z",
+            "modified": "2024-03-04T04:44:33.819Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bcb8df10-131c-4988-a992-7528ba4efd7c",
+            "colId": "64fcd21c-694c-4682-8cf8-a8457c9ea2e7",
+            "containerId": "",
+            "name": "Excel",
+            "url": "http://localhost:3000/businessAPI/v1/report/generateReport",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-04T04:28:16.503Z",
+            "modified": "2024-03-04T04:44:41.087Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTE3NjBhYTFmMTY5YTQxYjg3MWIiLCJpYXQiOjE3MDk1Mjc0MjIsImV4cCI6MTcwOTUzMTAyMn0.Vc3X7AqGEAEmr60qaqgnLa41u0Q75I326sGA7rhjPpU"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5280a849-fe78-4eef-8ade-5044a556144a",
+            "colId": "64fcd21c-694c-4682-8cf8-a8457c9ea2e7",
+            "containerId": "",
+            "name": "OrdenDeEmpresas",
+            "url": "http://localhost:3000/businessAPI/v1/business/4",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-04T04:28:16.504Z",
+            "modified": "2024-03-04T04:49:32.000Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTE3NjBhYTFmMTY5YTQxYjg3MWIiLCJpYXQiOjE3MDk1Mjc0MjIsImV4cCI6MTcwOTUzMTAyMn0.Vc3X7AqGEAEmr60qaqgnLa41u0Q75I326sGA7rhjPpU",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7b7734c2-4b49-4dd2-abb6-52e5818d5a6a",
+            "colId": "64fcd21c-694c-4682-8cf8-a8457c9ea2e7",
+            "containerId": "",
+            "name": "EditarEmpresas",
+            "url": "http://localhost:3000/businessAPI/v1/business/65e552686ca3918f9b87210f",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-04T04:28:16.505Z",
+            "modified": "2024-03-04T04:50:51.497Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"ComeMucho\",\n  \"impactLevel\": \"medio\",\n  \"operationTime\": \"si\",\n  \"category\": \"Comida\",\n  \"size\": \"200 personas\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
