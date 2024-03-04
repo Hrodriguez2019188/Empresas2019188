@@ -11,7 +11,7 @@ const UserSchema = mongoose.Schema({
 
   password: { type: String, required: [true, 'La contraseña es obligatoria'] },
 
-  state: { type: Boolean, default: true },
+  estado: { type: Boolean, default: true },
 });
 
 UserSchema.methods.toJSON = function () {

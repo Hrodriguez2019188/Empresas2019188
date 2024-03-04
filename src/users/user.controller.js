@@ -9,7 +9,7 @@ export const userLogin = async (req, res) => {
   try {
     const user = await User.findOne({ email }); 
     if (!user) return response.status(400).json({ msg: 'Usuario no encontrado' }); 
-    if (!user.state)
+    if (!user.estado)
       return response
         .status(400)
         .json({ msg: 'Usuario eliminado de la base de datos' });
@@ -39,7 +39,7 @@ export const userPost = async (req, res) => {
 // Método GET
 export const userGet = async (req, res) => {
   const { limit, from } = req.query;
-  const query = { state: true };
+  const query = { estado: true };
 
   const [total, users] = await Promise.all([
     User.countDocuments(query),

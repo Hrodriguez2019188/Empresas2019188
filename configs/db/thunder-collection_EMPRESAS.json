@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "EMPRESAS",
-    "dateExported": "2024-03-04T04:51:31.047Z",
+    "dateExported": "2024-03-04T05:08:25.295Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-04T04:28:16.501Z",
-            "modified": "2024-03-04T04:48:08.001Z",
+            "modified": "2024-03-04T05:02:00.129Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Procasa\",\n  \"impactLevel\": \"medio\",\n  \"operationTime\": \"88 años\",\n  \"category\": \"venta de carne\",\n  \"size\": \"500 empleados\"\n}",
+                "raw": "{\n  \"name\": \"Procasa\",\n  \"impactLevel\": \"medio\",\n  \"experience\": \"88 años\",\n  \"category\": \"venta de carne\"\n}",
                 "form": []
             },
             "tests": []
@@ -47,13 +47,8 @@
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-03-04T04:28:16.503Z",
-            "modified": "2024-03-04T04:44:41.087Z",
-            "headers": [
-                {
-                    "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1NTE3NjBhYTFmMTY5YTQxYjg3MWIiLCJpYXQiOjE3MDk1Mjc0MjIsImV4cCI6MTcwOTUzMTAyMn0.Vc3X7AqGEAEmr60qaqgnLa41u0Q75I326sGA7rhjPpU"
-                }
-            ],
+            "modified": "2024-03-04T05:06:43.999Z",
+            "headers": [],
             "params": [],
             "tests": []
         },
@@ -82,16 +77,16 @@
             "colId": "64fcd21c-694c-4682-8cf8-a8457c9ea2e7",
             "containerId": "",
             "name": "EditarEmpresas",
-            "url": "http://localhost:3000/businessAPI/v1/business/65e552686ca3918f9b87210f",
+            "url": "http://localhost:3000/businessAPI/v1/business/65e5568fe948e4ad045374aa",
             "method": "PUT",
             "sortNum": 40000,
             "created": "2024-03-04T04:28:16.505Z",
-            "modified": "2024-03-04T04:50:51.497Z",
+            "modified": "2024-03-04T05:08:12.250Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"ComeMucho\",\n  \"impactLevel\": \"medio\",\n  \"operationTime\": \"si\",\n  \"category\": \"Comida\",\n  \"size\": \"200 personas\"\n}",
+                "raw": "{\n  \"name\": \"ComeMucho\",\n  \"impactLevel\": \"medio\",\n  \"operationTime\": \"si\",\n  \"category\": \"Comida\"\n}",
                 "form": []
             },
             "tests": []

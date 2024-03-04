@@ -1,36 +1,33 @@
 [{
   "_id": {
-    "$oid": "65e5524f6ca3918f9b87210c"
-  },
-  "name": "Multifor",
-  "impactLevel": "bajo",
-  "operationTime": "10 años",
-  "category": "Muebles",
-  "size": "30 empleados",
-  "state": true,
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "65e552686ca3918f9b87210f"
+    "$oid": "65e5568fe948e4ad045374aa"
   },
   "name": "ComeMucho",
   "impactLevel": "medio",
-  "operationTime": "si",
+  "experience": "88 años",
   "category": "Comida",
-  "size": "200 personas",
-  "state": true,
+  "estado": true,
   "__v": 0
 },
 {
   "_id": {
-    "$oid": "65e552876ca3918f9b872112"
+    "$oid": "65e5576de4d183027cbdd2f6"
   },
-  "name": "Procasa",
-  "impactLevel": "medio",
-  "operationTime": "88 años",
-  "category": "venta de carne",
-  "size": "500 empleados",
-  "state": true,
+  "name": "Multifor",
+  "impactLevel": "bajo",
+  "experience": "10 años",
+  "category": "Muebles",
+  "estado": true,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e55798e4d183027cbdd2f9"
+  },
+  "name": "Empagua",
+  "impactLevel": "Alto",
+  "experience": "80 años",
+  "category": "Servicios",
+  "estado": true,
   "__v": 0
 }]

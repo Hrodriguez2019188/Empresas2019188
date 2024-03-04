@@ -23,17 +23,14 @@ router.post( // Ruta para registrar un nuevo negocio
   [
     check('name').custom(businessExists), // Validar si el nombre del negocio ya existe
     check('impactLevel', 'El nivel de impacto es requerido').not().isEmpty(),
-    check('operationTime', 'El tiempo de operación es requerido').not().isEmpty(),
+    check('experience', 'El tiempo de operación es requerido').not().isEmpty(),
     check('category', 'La categoría es requerida').not().isEmpty(),
-    check('size', 'El tamaño es requerido').not().isEmpty(),
     validateFields, // Validar los campos
   ],
   businessPost
 );
 
 router.get('/:orderReference', [ validateFields], businessOrder); // Ruta para obtener un negocio por referencia de orden
-
-router.get('/generateReport', [ validateFields], businessExcel); // Ruta para generar un reporte de negocios
 
 router.put( // Ruta para actualizar un negocio
   '/:id',

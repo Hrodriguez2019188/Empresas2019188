@@ -4,13 +4,13 @@ import exceljs from 'exceljs';
 
 // Método POST
 export const businessPost = async (req, res) => {
-  const { name, impactLevel, operationTime, category, size } = req.body;
+  const { name, impactLevel, experience, category } = req.body;
   const business = new Business({
     name,
     impactLevel,
-    operationTime,
+    experience,
     category,
-    size,
+  
   });
 
   await business.save();
@@ -20,7 +20,7 @@ export const businessPost = async (req, res) => {
 // Método GET
 export const businessGet = async (req, res) => {
   const { limit, from } = req.query;
-  const query = { state: true };
+  const query = { estado: true };
 
   const [total, businesses] = await Promise.all([
     Business.countDocuments(query),
@@ -50,9 +50,9 @@ export const businessExcel = async (req, res) => {
       excelSheet.addRow([
         businessRow.name,
         businessRow.impactLevel,
-        businessRow.operationTime,
+        businessRow.experience,
         businessRow.category,
-        businessRow.size,
+      
       ]);
     });
 
@@ -82,7 +82,7 @@ export const businessExcel = async (req, res) => {
 // Método PUT
 export const businessPut = async (req, res) => {
   const { id } = req.params;
-  const { _id, state, ...rest } = req.body;
+  const { _id, estado, ...rest } = req.body;
 
   if (rest.password) {
     const salt = bcryptjs.genSaltSync();
@@ -109,7 +109,7 @@ export const businessOrder = async (req, res = Response) => {
       orderMode = 'desc';
       break;
     case 3:
-      sorting = 'operationTime';
+      sorting = 'experience';
       orderMode = 'asc';
       break;
     case 4:
